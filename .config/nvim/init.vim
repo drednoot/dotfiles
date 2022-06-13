@@ -34,6 +34,10 @@ filetype plugin indent on
 " haskell
 au FileType haskell setlocal tabstop=2 shiftwidth=2 expandtab
 
+
+" dotfiles test
+au BufWritePost init.vim :exe "!~/Documents/arch_dotfiles/copy_dot.sh"
+
 call plug#begin()
 
 Plug 'vim-airline/vim-airline'
