@@ -1,0 +1,194 @@
+/* *.font: Ubuntu Mono:pixelsize=17:antialias=true:autohint=true */
+*.font: Fira Code:pixelsize=14:antialias=true:autohint=true
+*.fonta: Ubuntu Mono:size=10
+*.alpha: 0.9
+*.showbar: 1
+*.shell: /usr/bin/zsh
+*.borderpx: 3
+
+/* nord color scheme */
+/* *.color0: #3b4252 */
+/* *.color1: #bf616a */
+/* *.color2: #a3be8c */
+/* *.color3: #ebcb8b */
+/* *.color4: #81a1c1 */
+/* *.color5: #b48ead */
+/* *.color6: #88c0d0 */
+/* *.color7: #e5e9f0 */
+
+/* *.color8: #4c566a */
+/* *.color9: #bf616a */
+/* *.color10: #a3be8c */
+/* *.color11: #ebcb8b */
+/* *.color12: #81a1c1 */
+/* *.color13: #b48ead */
+/* *.color14: #8fbcbb */
+/* *.color15: #eceff4 */
+
+/* *.background: #2e3440 */
+/* *.foreground: #d8dee9 */
+
+ /* chalk color scheme */
+/* *.color0: #646464 */
+/* *.color1: #f58e8e */
+/* *.color2: #a9d3ab */
+/* *.color3: #fed37e */
+/* *.color4: #7aabd4 */
+/* *.color5: #d6add5 */
+/* *.color6: #79d4d5 */
+/* *.color7: #d4d4d4 */
+
+/* *.color8: #646464 */
+/* *.color9: #f58e8e */
+/* *.color10: #a9d3ab */
+/* *.color11: #fed37e */
+/* *.color12: #7aabd4 */
+/* *.color13: #d6add5 */
+/* *.color14: #79d4d5 */
+/* *.color15: #d4d4d4 */
+
+/* *.background: #646464 */
+/* *.foreground: #d4d4d4 */
+
+/* base16 default dark solorscheme */
+/* #define base00 #181818 */
+/* #define base01 #282828 */
+/* #define base02 #383838 */
+/* #define base03 #585858 */
+/* #define base04 #b8b8b8 */
+/* #define base05 #d8d8d8 */
+/* #define base06 #e8e8e8 */
+/* #define base07 #f8f8f8 */
+/* #define base08 #ab4642 */
+/* #define base09 #dc9656 */
+/* #define base0A #f7ca88 */
+/* #define base0B #a1b56c */
+/* #define base0C #86c1b9 */
+/* #define base0D #7cafc2 */
+/* #define base0E #ba8baf */
+/* #define base0F #a16946 */
+
+/* *foreground:   base05 */
+/* #ifdef background_opacity */
+/* *background:   [background_opacity]base00 */
+/* #else */
+/* *background:   base00 */
+/* #endif */
+/* *cursorColor:  base05 */
+
+/* *color0:       base00 */
+/* *color1:       base08 */
+/* *color2:       base0B */
+/* *color3:       base0A */
+/* *color4:       base0D */
+/* *color5:       base0E */
+/* *color6:       base0C */
+/* *color7:       base05 */
+
+/* *color8:       base03 */
+/* *color9:       base09 */
+/* *color10:      base01 */
+/* *color11:      base02 */
+/* *color12:      base04 */
+/* *color13:      base06 */
+/* *color14:      base0F */
+/* *color15:      base07 */
+
+/* base16-atelier-estuary */
+/* #define base00 #22221b */
+/* #define base01 #302f27 */
+/* #define base02 #5f5e4e */
+/* #define base03 #6c6b5a */
+/* #define base04 #878573 */
+/* #define base05 #929181 */
+/* #define base06 #e7e6df */
+/* #define base07 #f4f3ec */
+/* #define base08 #ba6236 */
+/* #define base09 #ae7313 */
+/* #define base0A #a5980d */
+/* #define base0B #7d9726 */
+/* #define base0C #5b9d48 */
+/* #define base0D #36a166 */
+/* #define base0E #5f9182 */
+/* #define base0F #9d6c7c */
+
+/* *foreground:   base05 */
+/* #ifdef background_opacity */
+/* *background:   [background_opacity]base00 */
+/* #else */
+/* *background:   base00 */
+/* #endif */
+/* *cursorColor:  base05 */
+
+/* *color0:       base00 */
+/* *color1:       base08 */
+/* *color2:       base0B */
+/* *color3:       base0A */
+/* *color4:       base0D */
+/* *color5:       base0E */
+/* *color6:       base0C */
+/* *color7:       base05 */
+
+/* *color8:       base03 */
+/* *color9:       base08 */
+/* *color10:      base0B */
+/* *color11:      base0A */
+/* *color12:      base0D */
+/* *color13:      base0E */
+/* *color14:      base0C */
+/* *color15:      base07 */
+
+#define base00 #151718
+#define base01 #282a2b
+#define base02 #3b758c
+#define base03 #41535b
+#define base04 #43a5d5
+#define base05 #d6d6d6
+#define base06 #eeeeee
+#define base07 #ffffff
+#define base08 #cd3f45
+#define base09 #db7b55
+#define base0A #e6cd69
+#define base0B #9fca56
+#define base0C #55dbbe
+#define base0D #55b5db
+#define base0E #a074c4
+#define base0F #8a553f
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base08
+*color10:      base0B
+*color11:      base0A
+*color12:      base0D
+*color13:      base0E
+*color14:      base0C
+*color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*color16:      base09
+*color17:      base0F
+*color18:      base01
+*color19:      base02
+*color20:      base04
+*color21:      base06
+
+/* *.showbar: 1 */
+/* *.borderpx: 3 */
