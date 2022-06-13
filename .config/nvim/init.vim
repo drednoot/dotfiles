@@ -36,7 +36,7 @@ au FileType haskell setlocal tabstop=2 shiftwidth=2 expandtab
 
 
 " dotfiles test
-au BufWritePost init.vim :exe "!~/Documents/arch_dotfiles/copy_dot.sh"
+au BufWritePost init.vim,.xbindkeysrc,.xinitrc,.Xresources,.zshrc,vifmrc,mpv.conf silent :exe "!~/Documents/arch_dotfiles/copy_dot.sh"
 
 call plug#begin()
 
