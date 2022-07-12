@@ -50,7 +50,7 @@ vifmcd () {
 }
 bindkey -s '^o' 'vifmcd\n'
 
-export EDITOR=nvim
+export EDITOR=neovide
 export TERM=st
 
 alias ls='ls --color=auto -lth'
@@ -63,7 +63,7 @@ alias edwm='cd ~/Applications/dwm/ && nvim config.h'
 alias gac='git add . && EDITOR=nvim git commit'
 alias poweroff='sudo shutdown -P now'
 alias smci='sudo make clean install'
-alias v='nvim'
+alias v='neovide'
 alias inst='sudo ./install.sh'
 alias untar='tar xpvf'
 alias un7z='7z x'
@@ -78,9 +78,14 @@ alias yuzufix='sudo sysctl -w vm.max_map_count=262144'
 alias gpom='git push origin master'
 alias gpgm='git push github master'
 alias cemuhook='python -m ds4drv --hidraw --udp --udp-remap-buttons'
+alias scan='scanimage --progress -o'
+alias vlist='neovide /home/ns/.config/listmntn/watchables'
+alias vgames='neovide /home/ns/.config/listmntn/games'
 
 PS1="%B%F{red}[%f%b%B%~%b%B%F{red}]%f%b$ "
 eval $(dircolors -b ~/.dir_colors)
 
-paleofetch
+# paleofetch
+# echo "$(cat /home/ns/Documents/syncthing/files/games.txt)"
+/home/ns/Documents/bash/listmntn/listmntn
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

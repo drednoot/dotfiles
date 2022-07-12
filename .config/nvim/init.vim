@@ -7,7 +7,9 @@ set shiftwidth=4
 set softtabstop=4
 set nobackup
 set scrolloff=5
-"set nowrap
+" set sidescroll=5
+" set nowrap
+" set wrapmargin=4
 set ignorecase
 set smartcase
 set showmode
@@ -18,13 +20,25 @@ set wildmenu
 set cursorline
 set autochdir
 
-au ColorScheme * hi Normal ctermbg=none guibg=none
+au ColorScheme * hi Normal ctermbg=none 
 
 nmap <S-j> :bnext<cr>
 nmap <S-k> :bprev<cr>
 nmap <S-q> :bp <bar> bd #<cr>
 nmap <C-t> :NERDTreeToggle<cr>
 nmap <C-b> :enew<cr>
+
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+nmap <C-=> 2<C-w>+
+nmap <C--> 2<C-w>-
+nmap <C-.> 3<c-w>>
+nmap <C-,> 3<c-w><
+nmap <C-s>s <C-w>s
+nmap <C-s><S-s> <C-w>v
+
 
 set clipboard=unnamedplus
 
@@ -34,9 +48,18 @@ filetype plugin indent on
 " haskell
 au FileType haskell setlocal tabstop=2 shiftwidth=2 expandtab
 
-
 " dotfiles test
 au BufWritePost init.vim,.xbindkeysrc,.xinitrc,.Xresources,.zshrc,vifmrc,mpv.conf silent :exe "!~/Documents/arch_dotfiles/copy_dot.sh"
+
+nnoremap k gk
+nnoremap j gj
+vnoremap k gk
+vnoremap j gj
+
+" :ColorHighlight
+let g:neovide_transparency=0.9
+set guifont=Fira\ Code:h12
+set mouse=a
 
 call plug#begin()
 
@@ -49,6 +72,9 @@ Plug 'https://github.com/dawikur/base16-vim-airline-themes'
 Plug 'chriskempson/base16-vim'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'akinsho/toggleterm.nvim'
+Plug 'norcalli/nvim-colorizer.lua'
+" Plug 'norcalli/nvim-terminal.lua'
+
 Plug 'https://github.com/neovimhaskell/haskell-vim'
 Plug 'rust-lang/rust.vim'
 
@@ -62,9 +88,6 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'rafamadriz/friendly-snippets'
-
-" nvim-coc
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -84,5 +107,9 @@ nnoremap <silent> gd <cmd> lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gr <cmd> lua vim.lsp.buf.references()<CR>
 nnoremap <silent> gq <cmd> cclose <CR>
 
+lua require'colorizer'.setup()
+" lua require'terminal'.setup()
+
 " lua require("lspconfig").pyright.setup{}
 " source $HOME/.config/nvim/plug-config/coc.vim
+"

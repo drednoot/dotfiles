@@ -15,7 +15,7 @@ xrdb ~/.Xresources
 xbindkeys 
 
 # remove tearing
-xrandr --output HDMI-A-0 --set TearFree off
+xrandr --output HDMI-A-0 --set TearFree on
 
 
 # screensaver set to half an hour
