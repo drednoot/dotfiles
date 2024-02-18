@@ -1,0 +1,50 @@
+/* 
+bbbbbb - fg norm
+222222 - bg norm
+404040 - fg sel
+e0e0e0 - bg sel
+*/
+
+*{
+    font-family: "Fira Code";
+		font-size: 12px;
+		padding: none;
+		margin: none;
+		border: none;
+}
+
+window {
+    background-color: #222222;
+}
+
+#input {
+	background-color: #222222;
+	color: #bbbbbb;
+}
+
+#inner-box {
+}
+
+#outer-box {
+}
+
+#scroll {
+}
+
+#text {
+}
+
+#entry {
+	background-color: #222222;
+	color: #bbbbbb;
+}
+
+#entry:selected {
+	background-color: #e0e0e0;
+	color: #404040;
+}
+
+
+#text:selected {
+	color: #222222;
+}
