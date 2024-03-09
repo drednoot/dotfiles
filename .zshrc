@@ -7,9 +7,11 @@ _comp_options+=(globdots)
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
+
 export EDITOR=nvim
 export VUSUAL=nvim
 export MAKEFLAGS=-j$(nproc)
+export PATH="/home/ns/.local/bin:$PATH"
 
 bindkey -e
 
@@ -70,3 +72,5 @@ alias conf='git --git-dir=$HOME/Applications/dotfiles/ --work-tree=$HOME/'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+eval "$(zoxide init zsh)"
