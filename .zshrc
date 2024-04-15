@@ -11,7 +11,7 @@ HISTFILE=~/.cache/zsh/history
 export EDITOR=nvim
 export VUSUAL=nvim
 export MAKEFLAGS=-j$(nproc)
-export PATH="/home/ns/.local/bin:$PATH"
+export PATH="/home/ns/.local/bin:/home/ns/.cargo/bin:$PATH"
 
 bindkey -e
 
