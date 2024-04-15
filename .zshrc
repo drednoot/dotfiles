@@ -23,16 +23,16 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 # preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-vifmcd () {
-    tmp="$(mktemp)"
-    ranger --choosedir="$tmp" .
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
+alias yazi='/home/ns/Applications/yazi/target/release/yazi'
+yy () {
+		local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+		yazi "$@" --cwd-file="$tmp"
+		if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+			cd -- "$cwd"
+		fi
+		rm -f -- "$tmp"
 }
-bindkey -s '^o' 'vifmcd\n'
+bindkey -s '^o' 'yy\n'
 
 alias ls='ls --color=auto -lth'
 alias cp='cp --verbose'
