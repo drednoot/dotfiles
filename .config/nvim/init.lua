@@ -171,16 +171,10 @@ local maplocalleader = ','
 g.vimtex_view_general_options = '-reuse-instance u/pdf'
 cmd'au User VimtexEventCompileSuccess silent :exe "!pkill -HUP mupdf"'
 
--- ranger.nvim
-require("ranger-nvim").setup({
-	enable_cmds = true,
-	ui = {
-		border = "shadow",
-		width = 0.75,
-		height = 0.75,
-		x = 0.5,
-		y = 0.5,
-	}
+-- tfm.nvim
+vim.api.nvim_set_keymap("n", "<C-t>", "", {
+	noremap = true,
+	callback = require("tfm").open,
 })
 
 -- startup.nvim
@@ -233,7 +227,7 @@ return require('packer').startup(function(use)
     use 'folke/neodev.nvim'
     use 'ldelossa/nvim-dap-projects'
 
-		use 'kelly-lin/ranger.nvim'
+		use 'Rolv-Apneseth/tfm.nvim'
 
     use {
         "williamboman/mason.nvim",
