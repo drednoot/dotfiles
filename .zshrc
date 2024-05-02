@@ -23,7 +23,6 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 # preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
-alias yazi='/home/ns/Applications/yazi/target/release/yazi'
 yy () {
 		local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 		yazi "$@" --cwd-file="$tmp"
