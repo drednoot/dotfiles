@@ -190,6 +190,15 @@ g.qs_highlight_on_keys = {'f', 'F', 't', 'T'}
 g.mkdp_auto_start = 0
 g.mkdp_refresh_slow = 1
 
+-- VISUAL-WHITESPACE
+require("visual-whitespace").setup({
+     highlight = { link = 'Visual' },
+     space_char = '·',
+     tab_char = '→',
+     nl_char = '↲',
+     cr_char = '←'
+})
+
 -- PACKER
 vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
@@ -269,4 +278,6 @@ return require('packer').startup(function(use)
 	})
 
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+	use 'mcauley-penney/visual-whitespace.nvim'
 end)
