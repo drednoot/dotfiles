@@ -269,6 +269,7 @@ return require('packer').startup(function(use)
 	}
 
 	use 'tikhomirov/vim-glsl'
+	use 'NLKNguyen/vim-maven-syntax'
 
 	use 'unblevable/quick-scope'
 
