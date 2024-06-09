@@ -65,7 +65,7 @@ alias vifm='vifm .'
 alias asm='nasm -f elf32 -g -F dwarf'
 alias lk='ld -m elf_i386'
 alias src='source ~/.zshrc'
-alias ideaunlock='rm -rf /home/ns/.var/app/com.jetbrains.IntelliJ-IDEA-Community/config/JetBrains/IdeaIC2023.3/.lock'
+alias ideaunlock='rm -rf /home/ns/.var/app/com.jetbrains.IntelliJ-IDEA-Community/config/JetBrains/IdeaIC2024.1/.lock'
 alias braveunlock='rm -rf /home/ns/.config/BraveSoftware/Brave-Browser/SingletonLock'
 alias conf='git --git-dir=$HOME/Applications/dotfiles/ --work-tree=$HOME/'
 
