@@ -226,11 +226,6 @@ return require('packer').startup(function(use)
     --     requires = { 'nvim-lua/plenary.nvim' }
     -- }
 
-    use 'neovim/nvim-lspconfig'
-    -- my monitor is not that big so this is not very useful
-    -- use 'spolu/dwm.vim'
-    use 'ranjithshegde/ccls.nvim'
-
     use 'mfussenegger/nvim-dap'
     use 'rcarriga/nvim-dap-ui'
     use 'folke/neodev.nvim'
@@ -238,9 +233,6 @@ return require('packer').startup(function(use)
 
 		use 'Rolv-Apneseth/tfm.nvim'
 
-    use {
-        "williamboman/mason.nvim",
-    }
     use { 
         'neoclide/coc.nvim',
         branch = 'release'
@@ -250,8 +242,6 @@ return require('packer').startup(function(use)
 			'jose-elias-alvarez/null-ls.nvim',
 			requires = { 'https://github.com/nvim-lua/plenary.nvim' }
 		}
-
-	use {"akinsho/toggleterm.nvim", tag = '*' }
 
     use 'tpope/vim-fugitive'
     use 'airblade/vim-gitgutter'
