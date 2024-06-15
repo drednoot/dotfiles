@@ -25,6 +25,7 @@ opt.writebackup = false
 opt.cursorline = true
 -- opt.updatetime = 300
 opt.signcolumn = "yes"
+opt.backspace = "indent,eol,start"
 
 -- INDENTATION
 opt.autoindent = true
@@ -98,14 +99,13 @@ map('n', '<F11>', ':DapStepInto<CR>')
 map('n', '<F12>', ':DapStepOut<CR>')
 map('v', '<C-k>', '<CMD>lua require("dapui").eval()<CR>')
 -- termninal mappings
-require("toggleterm").setup()
-map('n', '<C-n>', '<CMD>ToggleTerm size=20 direction=horizontal<CR>')
-map('t', '<C-n>', '<CMD>ToggleTerm size=20 direction=horizontal<CR>')
 map('t', '<c-\\><c-\\>', '<c-\\><c-n>')
 map('t', '<c-h>', '<c-\\><c-n><c-w>h')
 map('t', '<c-j>', '<c-\\><c-n><c-w>j')
 map('t', '<c-k>', '<c-\\><c-n><c-w>k')
 map('t', '<c-l>', '<c-\\><c-n><c-w>l')
+-- ctrl backspace
+map('i', '<c-bs>', '<c-w>')
 
 -- LUALINE
 require('lualine').setup {
@@ -118,7 +118,7 @@ require('lualine').setup {
 }
 
 -- NVIM-DAP
-require("neodev").setup()
+-- require("neodev").setup()
 require("dapui").setup()
 require("nvim-dap-projects").search_project_config()
 
@@ -144,7 +144,7 @@ null_ls.setup({
 })
 
 -- MASON
-require("mason").setup()
+-- require("mason").setup()
 
 -- NEOVIDE-SPECIFIC
 if vim.g.neovide then
@@ -271,4 +271,6 @@ return require('packer').startup(function(use)
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
 	use 'mcauley-penney/visual-whitespace.nvim'
+
+	use 'neovim/nvim-lspconfig'
 end)
