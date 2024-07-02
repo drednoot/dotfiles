@@ -119,8 +119,8 @@ require('lualine').setup {
 
 -- NVIM-DAP
 -- require("neodev").setup()
-require("dapui").setup()
-require("nvim-dap-projects").search_project_config()
+-- require("dapui").setup()
+-- require("nvim-dap-projects").search_project_config()
 
 -- NULL-LS
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
@@ -152,7 +152,7 @@ if vim.g.neovide then
 	vim.g.neovide_scale_factor = 0.70
   vim.g.neovide_transparency = 0.95
 else 
-	cmd'hi Normal guibg=NONE ctermbg=NONE'
+	-- cmd'hi Normal guibg=NONE ctermbg=NONE'
 end
 
 -- COMPLETION
