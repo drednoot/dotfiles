@@ -72,6 +72,7 @@ alias src='source ~/.zshrc'
 alias ideaunlock='rm -rf /home/ns/.var/app/com.jetbrains.IntelliJ-IDEA-Community/config/JetBrains/IdeaIC2024.1/.lock'
 alias braveunlock='rm -rf /home/ns/.config/BraveSoftware/Brave-Browser/SingletonLock'
 alias conf='git --git-dir=$HOME/Applications/dotfiles/ --work-tree=$HOME/'
+alias nixconf='git --git-dir=$HOME/Applications/nixconfig/ --work-tree=/etc/nixos/'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
