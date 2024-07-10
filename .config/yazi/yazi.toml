@@ -1,0 +1,9 @@
+[opener]
+image = [
+	{ run = 'imv "$@"', orphan = true },
+]
+
+[open]
+prepend_rules = [
+	{ mime = "image/*", use = "image" },
+]
