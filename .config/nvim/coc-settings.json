@@ -1,5 +1,10 @@
 {
 	"suggest.noselect": true,
 	"semanticTokens.enable": true,
-	"semanticTokens.filetypes": ["c", "cpp", "java", "go"]
+  "semanticTokens.filetypes": [
+    "c",
+    "cpp",
+    "java",
+    "go"
+  ]
 }
