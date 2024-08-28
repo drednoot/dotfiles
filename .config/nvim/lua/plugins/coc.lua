@@ -7,6 +7,7 @@ return {
 	'neoclide/coc.nvim',
 	branch = 'release',
 
+	enabled = true,
 	lazy = false,
 
 	keys = {
