@@ -8,6 +8,7 @@ return {
 	'michaeljsmith/vim-indent-object',
 	'tikhomirov/vim-glsl',
 	'mcauley-penney/visual-whitespace.nvim',
+	'wellle/targets.vim',
 
 	{
 		'tpope/vim-commentary',
