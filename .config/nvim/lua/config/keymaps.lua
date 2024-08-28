@@ -20,3 +20,6 @@ vim.keymap.set('n', '<C-->', '3<C-w>-')
 
 -- ctrl backspace
 vim.keymap.set('i', '<c-bs>', '<c-w>')
+
+-- refresh config
+vim.keymap.set('n', '<c-m><c-m>', '<cmd>Lazy sync<cr>')
