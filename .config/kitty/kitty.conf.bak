@@ -1,2 +1,11 @@
 enable_audio_bell no
-background_opacity 0.95
+# background_opacity 0.90
+# font_family FiraCode Nerd Font Mono
+font_family Cascadia Nerd Font Mono
+font_size 14.0
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Mocha
+include current-theme.conf
+# END_KITTY_THEME
