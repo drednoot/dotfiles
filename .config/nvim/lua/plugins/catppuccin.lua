@@ -12,10 +12,13 @@ return {
 		no_underline = false,
 		styles = {
 			comments = { "italic" },
-		}
+		},
+		integrations = {
+			treesitter = true,
+		},
 	},
 
 	config = function()
-		vim.cmd([[colorscheme catppuccin]])
+		vim.cmd.colorscheme "catppuccin"
 	end,
 }

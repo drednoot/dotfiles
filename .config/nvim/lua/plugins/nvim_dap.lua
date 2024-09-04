@@ -7,22 +7,25 @@ return {
 
 	config = function()
 		local dap = require("dap")
-		dap.adapters.gdb = {
-			type = "executable",
-			command = "gdb",
-			args = { "--interpreter=dap", "--eval-command", "set print pretty on" }
+		dap.adapters.codelldb = {
+			type = 'server',
+			port = "${port}",
+			executable = {
+				command = '/home/ns/Applications/codelldb/extension/adapter/codelldb',
+				args = {"--port", "${port}"},
+			}
 		}
 
 		dap.configurations.c = {
 			{
 				name = "Launch",
-				type = "gdb",
+				type = "codelldb",
 				request = "launch",
 				program = function()
 					return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
 				end,
 				cwd = "${workspaceFolder}",
-				stopAtBeginningOfMainSubprogram = false,
+				stopOnEntry = false,
 			},
 		}
 		dap.configurations.cpp = dap.configurations.c;
@@ -58,6 +61,14 @@ return {
 			'<F5>',
 			function()
 				require("dap").continue()
+			end,
+			noremap = true,
+			silent = true,
+		},
+		{
+			'F6',
+			function()
+				require('dap').run_last()
 			end,
 			noremap = true,
 			silent = true,
