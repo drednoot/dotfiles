@@ -5,7 +5,8 @@
     "c",
     "cpp",
     "java",
-    "go"
+    "go",
+		"rust"
   ],
 	"rust-analyzer.disableProgressNotifications": true
 }
