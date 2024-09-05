@@ -3,6 +3,7 @@ return {
 	name = 'startup',
 
 	lazy = false,
+	enabled = false,
 
 	opts = {
 		theme = 'startify',

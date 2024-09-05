@@ -12,6 +12,7 @@ return {
 						workspaces = {
 							notes = "~/Documents/neorg",
 						},
+						default_workspace = "notes",
 					},
 				},
 			},
