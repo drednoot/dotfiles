@@ -23,6 +23,7 @@ export EDITOR=nvim
 export VUSUAL=nvim
 export MAKEFLAGS=-j$(nproc)
 export PATH="/home/ns/.local/bin:/home/ns/.cargo/bin:$PATH"
+export LD_LIBRARY_PATH="/home/ns/.local/lib64:$LD_LIBRARY_PATH"
 
 bindkey -e
 
@@ -80,6 +81,7 @@ alias ideaunlock='rm -rf /home/ns/.var/app/com.jetbrains.IntelliJ-IDEA-Community
 alias braveunlock='rm -rf /home/ns/.config/BraveSoftware/Brave-Browser/SingletonLock'
 alias conf='git --git-dir=$HOME/Applications/dotfiles/ --work-tree=$HOME/'
 alias nixconf='git --git-dir=$HOME/Applications/nixconfig/ --work-tree=/etc/nixos/'
+alias rup='rclone bisync /home/ns/Documents/neorg yadisk:neorg --resync-mode newer'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
