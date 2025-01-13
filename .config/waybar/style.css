@@ -131,6 +131,10 @@ button:hover {
 /*     color: #000000; */
 /* } */
 
+#battery.critical {
+	background-color: #900000;
+}
+
 /* #battery.charging, #battery.plugged { */
 /*     color: #ffffff; */
 /*     background-color: #26A65B; */

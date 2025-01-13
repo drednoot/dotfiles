@@ -85,6 +85,6 @@ alias rup='rclone bisync /home/ns/Documents/neorg yadisk:neorg --resync-mode new
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/Applications/powerlevel10k/powerlevel10k.zsh-theme
 
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
