@@ -2,8 +2,12 @@
 image = [
 	{ run = 'imv "$@"', orphan = true },
 ]
+pdf = [
+	{ run = 'mupdf "$@"', orphan = true },
+]
 
 [open]
 prepend_rules = [
 	{ mime = "image/*", use = "image" },
+	{ mime = "application/pdf", use = "pdf" },
 ]
