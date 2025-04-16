@@ -1,3 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:drednoot/nvim.git
+[submodule ".config/mpv/scripts/subs2srs"]
+	path = .config/mpv/scripts/subs2srs
+	url = https://github.com/Ajatt-Tools/mpvacious.git
