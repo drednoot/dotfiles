@@ -25,6 +25,7 @@ export MAKEFLAGS=-j$(nproc)
 export PATH="/home/ns/.local/bin:/home/ns/.cargo/bin:$PATH"
 export LD_LIBRARY_PATH="/home/ns/.local/lib64:$LD_LIBRARY_PATH"
 export CXX=clang++
+export COPILOT_PROXY_URL='http://localhost:12334'
 
 bindkey -e
 
