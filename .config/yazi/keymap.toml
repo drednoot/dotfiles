@@ -3,8 +3,28 @@ on   = [ "<Esc>" ]
 run  = "close"
 desc = "Cancel input"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on  = [ "y" ]
 run = [ "yank", '''
 	shell --confirm 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list'
 ''' ]
+
+[[mgr.prepend_keymap]]
+on = [ "m" ]
+run = "plugin bookmarks save"
+desc = "Save current position as a bookmark"
+
+[[mgr.prepend_keymap]]
+on = [ "'" ]
+run = "plugin bookmarks jump"
+desc = "Jump to a bookmark"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "d" ]
+run = "plugin bookmarks delete"
+desc = "Delete a bookmark"
+
+[[mgr.prepend_keymap]]
+on = [ "b", "D" ]
+run = "plugin bookmarks delete_all"
+desc = "Delete all bookmarks"
