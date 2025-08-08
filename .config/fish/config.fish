@@ -18,17 +18,18 @@ if status is-interactive
   bind -M insert alt-backspace backward-kill-word
   bind -M insert ctrl-l accept-autosuggestion
 
-  set EDITOR nvim
-  set VISUAL nvim
-  set MAKEFLAGS -j$(nproc)
+  fish_vi_key_bindings
+
+  set -gx EDITOR nvim
+  set -gx VISUAL nvim
+  set -gx MAKEFLAGS -j$(nproc)
   set -gx PATH $PATH ~/.local/bin ~/.cargo/bin
   set -gx LD_LIBRARY_PATH $LD_LIBRARY_PATH ~/.local/lib64
-  set CXX clang++
-  set http_proxy "http://localhost:12334"
-  set COPILOT_PROXY_URL "http://localhost:12334"
-  set -U fish_greeting "hey there"
-
-  fish_vi_key_bindings
+  set -gx CXX clang++
+  set -gx http_proxy "http://localhost:12334"
+  set -gx COPILOT_PROXY_URL "http://localhost:12334"
+  set -Ux fish_greeting "hey there"
+  set -gx SRATI_SF ~/.local/share/srati/2.toml
 
   abbr --add ls 'ls --color=auto -lth'
   abbr --add cp 'cp --verbose'
